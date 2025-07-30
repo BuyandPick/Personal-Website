@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Susan's Personal Website</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+    <div class="container">
+
+        <header>
+        <h1>Welcome to Susan's Website!</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="my-skills.html">Skills</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="future-plans.html">Future Plans</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+        </nav>
+        </header>
+
+        <main>
+        <section>
+            <h2>Hi, I'm Susan Valenzuela!</h2>
+            <div class="image-text-container">
+            <img src="images/susan.jpg" alt="A photo of Susan" width="250">
+            <div class="text-content">
+            <p>I attend Neumont College of Computer Science, and I'm calm and level-headed. My favorite activity is playing games with friends or relaxing. I have a unique sense of humor and find joy in many things.</p>
+            <p>This website is a place where you can learn more about me, my interests, favorite media, and my future goals. I hope you enjoy it!</p>
+            </div>
+            </div>
+        </section>
+        </main>
+        <section>
+            <h2>My Daughter</h2>
+            <div class="image-text-container">
+                <img id="slide" src="images/photo1.jpg" alt="Photo of Kleo" width="250">
+                <div class="text-content">
+                    <p>This is Kleenex—Kleo for short. She’s a five-year-old domestic longhair with a soft, fluffy coat and a calm, well-mannered personality. Kleo is gentle, affectionate, and always knows how to have a good nap!</p>
+                    <blockquote id="quote">Loading inspirational quote...</blockquote>
+                    <div class="slideshow-controls">
+                        <button onclick="prevSlide()">⟨</button>
+                        <button onclick="nextSlide()">⟩</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>    
+        <p>© 2025 Susan Valenzuela</p>
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+    </body>
+    </html>

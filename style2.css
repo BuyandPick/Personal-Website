@@ -1,0 +1,237 @@
+
+
+:root {
+    --bg-primary: #1e1e2e; 
+    --bg-secondary: #313244;
+    --text-primary: #ffffff;
+    --color-primary: #cba6f7;
+    --color-accent: #2d2d2d; 
+
+}
+
+img {
+    border: 3px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+    .slideshow-container {
+        
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    }
+
+    .slideshow-controls button {
+    color: var(--text-primary);
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    color: #222222;
+    background-size: cover;
+    line-height: 1.7;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("images/jellyjelly.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+
+
+
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.2); 
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3)\;
+}
+
+body.dark-theme .theme-toggle {
+    color: var(--text-primary); 
+}
+
+
+
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem 2rem;
+background-color: var(--card-bg);
+border-radius: 12px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+
+header {
+    position: relative; 
+    background-color: var(--bg-secondary);
+    color: #cd9dc0;
+    text-shadow: 1px 1px 3px #c185b16b;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #55556d;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(34, 33, 33, 0.74);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 1.25rem;
+    color: var(--link-color);
+    gap: 4 rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+color: var(--highlight-color);
+text-decoration: underline;
+}
+
+
+main {
+padding: 2rem 0;
+}
+
+
+footer {
+background-color: var(--bg-secondary);
+color: #cd9dc0;
+text-align: center;
+font-size: 0.9rem;
+padding: 1rem;
+border-top: 2px solid var(--border-color);
+}
+
+
+button {
+background-color: var(--accent-color);
+color: #11111b;
+border: none;
+padding: 0.6rem 1.2rem;
+border-radius: 8px;
+cursor: pointer;
+font-weight: bold;
+}
+
+button:hover {
+background-color: var(--highlight-color);
+}
+
+h1, h2, h3 {
+color: var(--text-color);
+}
+
+h2 {
+    color: #cd9dc0;
+    text-shadow: 1px 1px 3px #c185b16b;
+    }
+
+
+p {
+margin-bottom: 1.5rem;
+}
+
+
+.image-text-container {
+display: flex;
+flex-direction: column-reverse;
+gap: 1.5rem;
+align-items: center;
+justify-content: center;
+}
+
+.image-text-container img {
+max-width: 100%;
+border: 4px solid var(--border-color);
+border-radius: 12px;
+}
+
+
+@media (min-width: 768px) {
+nav ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.image-text-container {
+    flex-direction: row;
+}
+}
+
+
+/* Dark mode */
+body.dark-theme {
+    background-color: #313143;
+    color: #ffffff;
+}
+
+body.dark-theme header {
+    background-color: #252536;
+    color: #f5c2e7;
+}
+
+
+section {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+body.dark-theme section {
+    background-color: #252536;
+    box-shadow: none;
+}
+
+body.dark-theme nav {
+    background-color: #2f2f42;
+}
+
+body.dark-theme footer{
+    background-color: #252536;
+    color: #f5c2e7;
+}
+
