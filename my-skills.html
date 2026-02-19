@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Skills</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Skills & Technologies | Susan Valenzuela</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
 
-        <header>
-        <h1>My Skills</h1>
+    <header>
+        <h1>Technical Skills & Technologies</h1>
+        <button id="music-toggle" class="theme-toggle" style="left: 1rem; right: auto; top: 1rem;">
+        🔊 Play Music
+    </button>
+
+
+    <button id="theme-toggle" class="theme-toggle" style="right: 1rem; top: 1rem;">
+        🌙 Dark Mode
+    </button>
+
+    <audio id="bg-music" loop>
+        <source src="audio/background.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
         <nav>
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
-            <li><a href="my-skills.html">Skills</a></li>
-            <li><a href="future-plans.html">Future Plans</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="my-skills.html">Skills</a></li>
+                <li><a href="future-plans.html">About Me</a></li>
             </ul>
             <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
         </nav>
-        </header>
+    </header>
 
-        <main class="favorites-container">
-
-            <section class="favorite-card">
-                <h2>💻 Programming Skills</h2>
-                <ul>
-                    <!-- make 3 bullet points the max add to the right of the other ones-->
-                    <!-- use <li> -->
-                    <li> Java </li>
-                    <li> Html</li>
-                    <li> SQL</li>
-                    <li> Python</li>
-                </ul>
-            </section>
-
-            <section class="favorite-card">
-                <h2>🧠 Soft Skills</h2>
-                <ul>
-                    <!-- like teamwork type shi <li> -->
-                    <li> Nonchalant ahah</li>
-                    <li> Adapdability </li>
-                    <li> Problem Solving</li>
-                    <li> Idk more bullshit</li>
-                </ul>
-            </section>
-
-            <section class="favorite-card">
-                <h2> Creative & Tools</h2>
-                <ul>
-                    <!-- use <li> -->
-                    <li> Excel</li>
-                    <li> Intelij</li>
-                    <li> VS Code</li>
-                    <li> Android Studio</li>
-                </ul>
-            </section>
-            <section class="favorite-card">
-            
+    <main class="favorites-container">
 
 
-        </main>
+        <section class="favorite-card">
+            <h2>💻 Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>HTML & CSS</li>
+                <li>Dart (Flutter)</li>
+            </ul>
+        </section>
 
-        <footer>
-        <p>© 2025 Susan Valenzuela</p>
-        </footer>
 
-    </div>
+        <section class="favorite-card">
+            <h2>🛠 Frameworks, Tools & IDEs</h2>
+            <ul>
+                <li>Flutter (Mobile Frontend)</li>
+                <li>Android Studio</li>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ IDEA</li>
+                <li>Git & GitHub</li>
+                <li>Docker & NGINX</li>
+            </ul>
+        </section>
+
+        <section class="favorite-card">
+            <h2>🧠 Concepts & Architectures</h2>
+            <ul>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Model-View-Controller (MVC)</li>
+                <li>REST API Design</li>
+                <li>Data Persistence & File I/O</li>
+                <li>Asynchronous Programming</li>
+                <li>AI & Basic Machine Learning Concepts</li>
+            </ul>
+        </section>
+
+
+        <section class="favorite-card">
+            <h2>🤝 Professional & Soft Skills</h2>
+            <ul>
+                <li>Problem Solving & Debugging</li>
+                <li>Team Collaboration</li>
+                <li>Adaptability & Learning New Tools</li>
+                <li>Analytical Thinking</li>
+                <li>Project Management Basics</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Susan Valenzuela</p>
+    </footer>
+
+</div>
+
 <script src="main.js"></script>
 </body>
 </html>

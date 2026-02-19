@@ -2,6 +2,51 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
 
+
+const bgMusic = document.getElementById("bg-music");
+
+const musicToggle = document.getElementById("music-toggle");
+if (bgMusic) {
+    bgMusic.volume = 0.2; // 20% volume
+}
+if (bgMusic && musicToggle) {
+
+    const savedTime = localStorage.getItem("music-time");
+    const savedPlaying = localStorage.getItem("music-playing");
+
+    if (savedTime) {
+        bgMusic.currentTime = parseFloat(savedTime);
+    }
+
+    if (savedPlaying === "true") {
+        bgMusic.play().catch(() => console.log("Autoplay blocked"));
+        musicToggle.textContent = "🔇 Pause Music";
+    } else {
+        musicToggle.textContent = "🔊 Play Music";
+    }
+
+
+    musicToggle.addEventListener("click", function () {
+        if (bgMusic.paused) {
+            bgMusic.play();
+            musicToggle.textContent = "🔇 Pause Music";
+        } else {
+            bgMusic.pause();
+            musicToggle.textContent = "🔊 Play Music";
+        }
+
+        localStorage.setItem("music-playing", !bgMusic.paused);
+    });
+
+
+    setInterval(() => {
+        localStorage.setItem("music-time", bgMusic.currentTime);
+        localStorage.setItem("music-playing", !bgMusic.paused);
+    }, 500);
+}
+
+
+
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
         body.classList.add("dark-theme");
